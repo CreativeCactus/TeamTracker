@@ -1,0 +1,17 @@
+{
+  "name": "teamtracker",
+  "version": "1.0.0",
+  "description": "- Create a repo which contains some *.diary.md files  - Each file corresponds to a developer or team member  - Clone, append some text and commit changes with a message  - If a diary is updated by a commit, then the message is pushed to the API  - API updates status of each user with their latest message",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "koa-static-server": "^1.3.2"
+  }
+}

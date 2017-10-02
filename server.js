@@ -49,10 +49,11 @@ app
 
 // Hooks import setup
 
-const handler = webhooks('secret',{port:7777})
-        handler.on('error', function (err) {
-        console.error('Error:', err.message)
-    })
+const handler = webhooks('SECRET',{port:7777})
+
+handler.on('error', function (err) {
+    console.error('Error:', err.message)
+})
 
 handler.on('push', function (event) {
     console.log('Received a push event for %s to %s',

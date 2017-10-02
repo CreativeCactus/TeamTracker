@@ -7,4 +7,4 @@ fi
 
 set -x
 curl -X POST -u "${1}:${3}" "https://api.github.com/repos/${1}/${2}/hooks" -H "Content-Type: application/json" -d \
-	'{"name":"web", "active": true, "events": ["push","pull_request"], "config": {"secret": "${4}", "url": "'${5}'","content_type": "json"}}'
+	'{"name":"web", "active": true, "events": ["push","pull_request"], "config": {"secret": "'${4}'", "url": "'${5}'","content_type": "json"}}'
