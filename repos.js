@@ -10,11 +10,8 @@ module.exports = class RepoGroup {
         this.updateAll();
     }
 
-    updateAll(){
-        this.update(this.repos.forEach(this.updateOne))
-    }
-    update(...repos){
-        repos.forEach(this.updateOne)
+    update(){
+        this.repos.forEach(this.updateOne)
     }
     updateOne(repo){
         repo.update()

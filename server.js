@@ -25,7 +25,7 @@ if(args[0]!=='run') {
 // Setup
 
 // Pass the array of repo URLs to constructor
-const REPOS = new repoGroup(...args.slice[1].filter(v=>v))
+const REPOS = new repoGroup(...args.slice(1).filter(v=>v))
 
 // Server init
 
@@ -33,7 +33,7 @@ const app = new Koa();
 const router = new Router();
 
 app.use(hbs.middleware({
-    viewPath: __dirname + '/views'
+    viewPath: __dirname + '/views',
     defaultLayout:'main'
   }));
 
